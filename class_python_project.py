@@ -108,8 +108,8 @@ class Toplevel1:
         self.login_btn.configure(highlightcolor="black")
         self.login_btn.configure(pady="0")
         self.login_btn.configure(text='''Login''')
-        self.login_btn.configure(command= lambda: db.retrievData(
-            email= self.user_box.get(),
+        self.login_btn.configure(command= lambda: db.retrieveData(
+            email= self.email_box.get(),
             username= self.user_box.get()
         ))
 
